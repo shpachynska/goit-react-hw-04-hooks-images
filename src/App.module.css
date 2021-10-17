@@ -8,6 +8,19 @@
   padding-bottom: 24px;
 }
 
+.listContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.startLabel {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+  color: #303f9f;
+}
+
 /* 
 
 .App-logo {

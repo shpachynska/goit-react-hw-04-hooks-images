@@ -3,7 +3,7 @@ import styles from "./Searchbar.module.css";
 
 export default function Searchbar({ onSubmit }) {
   const [searchRequest, setSearchRequest] = useState("");
-  const [page] = useState(1);
+  // const [page] = useState(1);
 
   const handleInputChange = (event) => {
     setSearchRequest(event.currentTarget.value.toLowerCase());
@@ -16,7 +16,8 @@ export default function Searchbar({ onSubmit }) {
       alert("Enter your search query!");
       return;
     }
-    onSubmit(searchRequest, page);
+    // onSubmit(searchRequest, page);
+    onSubmit(searchRequest);
     setSearchRequest("");
     event.target.reset();
   };
