@@ -4,7 +4,7 @@ import styles from "./ErrorView.module.css";
 export default function ErrorView() {
   return (
     <div className={styles.notification} role="alert">
-      <img src={errorImage} width="240" alt="sadcat" />
+      <img src={errorImage} width="240" alt="nothing found" />
       <p>Nothing found!</p>
     </div>
   );

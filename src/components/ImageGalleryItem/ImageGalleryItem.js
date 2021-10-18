@@ -7,7 +7,7 @@ function ImageGalleryItem({ id, src, alt, onClick, bigSrc }) {
         id={id}
         className={styles.ImageGalleryItem}
         onClick={(event) => {
-          onClick(+event.currentTarget.id);
+          onClick(event.currentTarget.id);
         }}
       >
         <img src={src} alt={alt} className={styles.ImageGalleryItem__image} />
